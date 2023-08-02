@@ -125,7 +125,7 @@ def get_indiana_doc(doc_link):
 @app.route("/")
 def index():
     req_count.labels(endpoint="/").inc()
-    return "This is a service used by Open States to access sites with strange requirements (e.g. CA requires POST requests, IN auth proxy) in the browser.  Please use gently."
+    return "This is a service used by Open States to access sites with strange requirements (e.g. CA requires POST requests, IN auth proxy) in the browser. Please use gently."
 
 
 @req_time.labels(endpoint="/robots.txt").time()
